@@ -1,3 +1,4 @@
+![Visitor Badge](https://visitor-badge.feriirawann.repl.co?username=bbhpowpow&repo=myname)
 # MyName
 MyName adalah aplikasi berbasis web yang bisa digunakan untuk mengenerate nama orang dengan berbagai pilihan negara.
 
