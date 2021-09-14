@@ -26,7 +26,7 @@
                 <i class='bx bx-chevron-right'></i>
                 <span>Submit Suggestions</span>
               </a>
-              <a href="https://saweria.co/abinf" target="_blank" rel="noopener noreferrer" class="nav__menu-link">
+              <a href="https://github.com/bbhpowpow/myname" target="_blank" rel="noopener noreferrer" class="nav__menu-link">
                 <i class='bx bx-chevron-right'></i>
                 <span>Github Repository</span>
               </a>
