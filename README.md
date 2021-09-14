@@ -3,6 +3,8 @@ MyName adalah aplikasi berbasis web yang bisa digunakan untuk mengenerate nama o
 
 Jika ingin memodifikasi, silakan install terlebih dahulu `Faker` dengan menggunakan composer seperti di bawah ini:
 
-```composer require fakerphp/faker```
+```
+composer require fakerphp/faker
+```
 
 
