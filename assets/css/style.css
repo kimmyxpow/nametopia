@@ -124,7 +124,8 @@ fieldset {
 
 legend {
   box-sizing: border-box;
-  color: inherit;/* 2 */
+  color: inherit;
+  /* 2 */
   display: table;
   max-width: 100%;
   padding: 0;
@@ -189,10 +190,17 @@ html {
 }
 
 body {
+  height: 100%;
+  width: 100%;
+}
+
+#container {
+  position: absolute;
+  inset: 0;
   overflow-x: hidden;
 }
 
-body.no-scroll {
+#container.no-scroll {
   overflow: hidden;
 }
 
@@ -285,7 +293,7 @@ body.no-scroll {
 .main {
   grid-column: span 10 / span 10;
   grid-column-start: 2;
-  padding: 8rem 0;
+  padding: 4rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -339,6 +347,7 @@ body.no-scroll {
 
 .btn {
   display: inline-block;
+  font-family: 'poppins', sans-serif;
   padding: 0.5rem 3rem;
   border-radius: 9999px;
   text-decoration: none;
@@ -380,7 +389,7 @@ body.no-scroll {
 .section-main {
   margin: -1rem 0;
   position: relative;
-  padding: 14rem 0 6rem;
+  padding: 12rem 0 6rem;
   width: 100%;
   background: #000;
   display: flex;
@@ -459,6 +468,7 @@ body.no-scroll {
   padding-right: 0;
   padding: 0.3rem 1rem;
   text-transform: capitalize;
+  font-family: 'poppins', sans-serif;
 }
 
 .select-generate:focus {
@@ -476,6 +486,13 @@ body.no-scroll {
   text-transform: capitalize;
 }
 
+.generate__input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  font-family: 'poppins', sans-serif;
+}
+
 #particles-js {
   position: absolute;
   inset: 0;
@@ -483,6 +500,10 @@ body.no-scroll {
 }
 
 @media (min-width: 640px) {
+  .main {
+    padding: 8rem 0;
+  }
+
   .main__header-text {
     font-size: 2.25em;
   }
@@ -549,6 +570,7 @@ body.no-scroll {
 
 .input-field input,
 .input-field textarea {
+  font-family: 'poppins', sans-serif;
   background: rgb(10, 6, 31);
   border: none;
   padding: 8px 12px;
@@ -587,6 +609,7 @@ body.no-scroll {
 
 #alert {
   position: absolute;
+  font-family: 'poppins', sans-serif;
   background: #15172b;
   color: rgb(200, 194, 255);
   top: 4rem;
@@ -635,19 +658,24 @@ body.no-scroll {
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: #fff transparent transparent transparent;
 }
+
 .lds-ring div:nth-child(1) {
   animation-delay: -0.45s;
 }
+
 .lds-ring div:nth-child(2) {
   animation-delay: -0.3s;
 }
+
 .lds-ring div:nth-child(3) {
   animation-delay: -0.15s;
 }
+
 @keyframes lds-ring {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
