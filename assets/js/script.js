@@ -10,6 +10,7 @@ const btnSalin = document.querySelector('.btn-salin');
 const MyAlert = document.querySelector('#alert');
 const copyText = document.querySelector('#input-copy');
 const ldsRing = document.querySelector('.lds-ring');
+const container = document.querySelector('#container');
 
 navMenu.addEventListener('click', () => {
   navMenuDropdown.classList.toggle('show');
@@ -37,12 +38,14 @@ selectGender.addEventListener('change', () => {
 
 function getAjax() {
   ldsRing.classList.add('show');
+  container.classList.add('no-scroll');
   let xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
       generateName.innerHTML = xhr.responseText;
       copyText.value = xhr.responseText;
       ldsRing.classList.remove('show');
+      container.classList.remove('no-scroll');
     }
   }
   xhr.open('GET', `backend/generate.php?c=${selectCountry.value}&g=${selectGender.value}`, true);
