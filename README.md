@@ -8,4 +8,5 @@ Jika ingin memodifikasi, silakan install terlebih dahulu `Faker` dengan mengguna
 composer require fakerphp/faker
 ```
 
-
+### Donate
+[![Saweria](https://img.shields.io/badge/-SAWERIA-orange?style=for-the-badge)](https://saweria.co/abinf)
