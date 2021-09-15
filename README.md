@@ -2,6 +2,8 @@
 # MyName
 MyName adalah aplikasi berbasis web yang bisa digunakan untuk mengenerate nama orang dengan berbagai pilihan negara.
 
+Demo link : https://ksana.in/my
+
 Jika ingin memodifikasi, silakan install terlebih dahulu `Faker` dengan menggunakan composer seperti di bawah ini:
 
 ```
