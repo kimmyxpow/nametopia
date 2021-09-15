@@ -1,16 +1,15 @@
 // ? My Script
 
-const navMenu = document.querySelector('.nav__menu');
-const navMenuDropdown = document.querySelector('.nav__menu-dropdown');
-const selectCountry = document.querySelector('#select-country');
-const selectGender = document.querySelector('#select-gender');
-const btnGenerate = document.querySelector('#btn-generate');
-const generateName = document.querySelector('.generate__name');
-const btnSalin = document.querySelector('.btn-salin');
 const MyAlert = document.querySelector('#alert');
-const copyText = document.querySelector('#input-copy');
 const ldsRing = document.querySelector('.lds-ring');
-const container = document.querySelector('#container');
+const navMenu = document.querySelector('.nav__menu');
+const btnSalin = document.querySelector('.btn-salin');
+const copyText = document.querySelector('#input-copy');
+const btnGenerate = document.querySelector('#btn-generate');
+const selectGender = document.querySelector('#select-gender');
+const generateName = document.querySelector('.generate__name');
+const selectCountry = document.querySelector('#select-country');
+const navMenuDropdown = document.querySelector('.nav__menu-dropdown');
 
 navMenu.addEventListener('click', () => {
   navMenuDropdown.classList.toggle('show');
@@ -38,14 +37,14 @@ selectGender.addEventListener('change', () => {
 
 function getAjax() {
   ldsRing.classList.add('show');
-  container.classList.add('no-scroll');
+  document.body.classList.add('no-scroll');
   let xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
       generateName.innerHTML = xhr.responseText;
       copyText.value = xhr.responseText;
       ldsRing.classList.remove('show');
-      container.classList.remove('no-scroll');
+      document.body.classList.remove('no-scroll');
     }
   }
   xhr.open('GET', `backend/generate.php?c=${selectCountry.value}&g=${selectGender.value}`, true);
@@ -62,6 +61,10 @@ btnSalin.addEventListener('click', () => {
     MyAlert.classList.remove('show');
   }, 2000);
 });
+
+// ? smoothscroll.js
+
+const scroll = new SmoothScroll('a[href*="#"]');
 
 // ? gsap 
 
