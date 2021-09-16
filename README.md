@@ -29,3 +29,5 @@ Jika ada saran untuk aplikasi ini, silakan ajukan di [*form suggestion*](https:/
 ### Donate
 
 [![Saweria](https://img.shields.io/badge/-SAWERIA-orange?style=for-the-badge)](https://saweria.co/abinf)
+
+
