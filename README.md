@@ -5,10 +5,10 @@ MyName adalah aplikasi berbasis web yang bisa digunakan untuk mengenerate nama o
 
 Klik [disini](https://ksana.in/my) untuk melihat demo.
 
-Jika ingin memodifikasi, silakan install terlebih dahulu `Faker` dengan menggunakan `composer` seperti di bawah ini:
+Clone repository:
 
 ```
-composer require fakerphp/faker
+git clone
 ```
 
 Jika belum menginstall composer, bisa membaca dokumentasinya di [getcomposer.org](https://getcomposer.org/).
