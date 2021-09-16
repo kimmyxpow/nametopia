@@ -8,10 +8,8 @@ Klik [disini](https://ksana.in/my) untuk melihat demo.
 Clone repository:
 
 ```
-git clone
+git clone https://github.com/bbhpowpow/myname.git
 ```
-
-Jika belum menginstall composer, bisa membaca dokumentasinya di [getcomposer.org](https://getcomposer.org/).
 
 Website ini dibuat menggunakan `html css` (tanpa framework), `php` native, dan sedikit `javascript` vanila. Menggunakan beberapa library seperti: 
 
