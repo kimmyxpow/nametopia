@@ -16,7 +16,7 @@ Website ini dibuat menggunakan `html css` (tanpa framework), `php` native, dan s
  - [FakerPHP / Faker](https://fakerphp.github.io/) (PHP) 
  - [particle.js](https://github.com/VincentGarreau/particles.js/) (Javascript) 
  - [starback.js](https://github.com/zuramai/starback.js) (Javascript)  
- - [gsap scrollTrigger](https://greensock.com/scrolltrigger/) (Javascript) 
+ - [gsap](https://greensock.com/scrolltrigger/) (Javascript) 
  - [smooth-scroll.js](https://github.com/cferdinandi/smooth-scroll) (Javascript)
 
 Saya juga menggunakan `css reset` dari `normalize.css`, `font` dari `google font` (viga, spartan, dan poppins), dan `icon` dari `boxicons`.
