@@ -1,31 +1,30 @@
+# React + TypeScript + Vite
 
-![Visitor Badge](https://visitor-badges.glitch.me?username=bbhpowpow&repo=myname&label=VISITOR&style=for-the-badge&color=%23457BFF&token=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&contentType=svg)
-# MyName
-MyName adalah aplikasi berbasis web yang bisa digunakan untuk mengenerate nama orang dengan berbagai pilihan negara.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Klik [disini](https://ksana.in/my) untuk melihat demo.
+Currently, two official plugins are available:
 
-Clone repository:
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+
+- Configure the top-level `parserOptions` property like this:
+
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+  },
+}
 ```
-git clone https://github.com/bbhpowpow/myname.git
-```
 
-Website ini dibuat menggunakan `html css` (tanpa framework), `php` native, dan sedikit `javascript` vanila. Menggunakan beberapa library seperti: 
-
- - [FakerPHP / Faker](https://fakerphp.github.io/) (PHP) 
- - [particle.js](https://github.com/VincentGarreau/particles.js/) (Javascript) 
- - [starback.js](https://github.com/zuramai/starback.js) (Javascript)  
- - [gsap](https://greensock.com/scrolltrigger/) (Javascript) 
- - [smooth-scroll.js](https://github.com/cferdinandi/smooth-scroll) (Javascript)
-
-Saya juga menggunakan `css reset` dari `normalize.css`, `font` dari `google font` (viga, spartan, dan poppins), dan `icon` dari `boxicons`.
-
-### Saran
-Jika ada saran untuk aplikasi ini, silakan ajukan di [*form suggestion*](https://generator-nama.000webhostapp.com/form.php).
-
-### Donate
-
-[![Saweria](https://img.shields.io/badge/-SAWERIA-orange?style=for-the-badge)](https://saweria.co/abinf)
-
-
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
