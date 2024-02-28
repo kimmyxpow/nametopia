@@ -16,11 +16,11 @@ Ensure you have [Bun](https://bun.sh/) installed on your machine. Bun is a fast,
 
 1. Clone the repo
     ```sh
-    git clone https://github.com/abnvlf/image-to-palette.git
+    git clone https://github.com/abnvlf/nametopia.git
     ```
 2. Navigate to the project directory
     ```sh
-    cd image-to-palette
+    cd nametopia
     ```
 3. Install dependencies
     ```sh
