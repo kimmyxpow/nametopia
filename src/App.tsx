@@ -102,9 +102,9 @@ function App() {
                 </div>
             </div>
             <p className="text-justify break-all overflow-hidden h-full">
-                {Array.from({ length: 2000 }).map((_, index) => (
+                {Array.from({ length: 50 }).map((_, index) => (
                     <span
-                        className="odd:text-zinc-400 even:text-zinc-200"
+                        className="odd:text-zinc-400 even:text-zinc-200 text-8xl font-black"
                         key={index}
                     >
                         {generate()}{" "}
