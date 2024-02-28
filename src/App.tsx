@@ -39,10 +39,10 @@ function App() {
                         discover the perfect name inspiration for any purpose.
                     </p>
                     <div className="mt-4">
-                        <div className="grid grid-cols-2 gap-4">
+                        <div className="grid sm:grid-cols-2 gap-4">
                             <SexSelect />
                             <CountrySelect />
-                            <div className="col-span-2 flex gap-1">
+                            <div className="sm:col-span-2 flex gap-1">
                                 <div className="py-3 px-6 text-center bg-black text-white font-bold rounded-lg w-full">
                                     {name}
                                 </div>
@@ -102,7 +102,9 @@ function App() {
                 </div>
             </div>
             <p className="text-justify break-all overflow-hidden h-full">
-                {Array.from({ length: 50 }).map((_, index) => (
+                {Array.from({
+                    length: window.matchMedia("(min-width: 640px)") ? 50 : 20,
+                }).map((_, index) => (
                     <span
                         className="odd:text-zinc-400 even:text-zinc-200 text-8xl font-black"
                         key={index}
